@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gamai-trust"
+version = "0.3.0"
+description = "Evidence-bound trust layer for agents: verify claims, remember refusals, score false success."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gamai-trust = "gamai_trust.cli:main"
+gamai-trust-mcp = "gamai_trust.mcp_server:main"
+
+[tool.setuptools]
+packages = ["gamai_trust"]
