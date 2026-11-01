@@ -110,6 +110,13 @@ repro.sh              one command: tests + demo
 - `gamai-io/crossnode-bench` — standalone false-success benchmark.
 - `gamai-io/gamai-guard` — multilingual injection cascade.
 
+## Validated on LUMI-HPC
+
+Run on EuroHPC LUMI (project EHPC-AIF-2026PG01-1844):
+
+- **F1** — proofgate + agent-immunity + crossnode demo + guard reproduce on LUMI (CPU, ~0 GPU-h).
+- **crossnode large-N** (LUMI-C): **25,600 claim-vs-truth trials across 8 nodes** — pass rate 93.75%, false-success 6.25% (1,600 dishonest claims flagged), **0 false-success on read / action / cross**. Details: https://github.com/gamai-io/crossnode-bench
+
 ## License
 
 Apache-2.0.
