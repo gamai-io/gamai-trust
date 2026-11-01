@@ -1,3 +1,5 @@
+[![CI](https://github.com/gamai-io/gamai-trust/actions/workflows/ci.yml/badge.svg)](https://github.com/gamai-io/gamai-trust/actions/workflows/ci.yml)
+
 # gamAI Trust Layer
 
 **Three checks that make an agent's "done" mean something:**
