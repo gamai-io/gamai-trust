@@ -1,6 +1,7 @@
 [![PyPI](https://img.shields.io/pypi/v/gamai-trust.svg)](https://pypi.org/project/gamai-trust/)
 [![CI](https://github.com/gamai-io/gamai-trust/actions/workflows/ci.yml/badge.svg)](https://github.com/gamai-io/gamai-trust/actions/workflows/ci.yml)
 > **Install:** `pip install gamai-trust`
+> **Live evidence dashboard:** https://gamai-io.github.io/demo/
 
 # gamAI Trust Layer
 
