@@ -14,4 +14,4 @@ gamai-trust = "gamai_trust.cli:main"
 gamai-trust-mcp = "gamai_trust.mcp_server:main"
 
 [tool.setuptools]
-packages = ["gamai_trust"]
+packages = ["gamai_trust", "gamai_trust._components"]

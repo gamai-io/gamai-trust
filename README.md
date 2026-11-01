@@ -99,7 +99,7 @@ repro.sh              one command: tests + demo
 - The trust layer **reports** state; it does not make an agent honest.
 - `check_injection` is a deterministic filter. It is not a content moderator and not a substitute for authorization controls.
 - CrossNode demo uses a local shell; the benchmark logic is real, the fleet is synthetic.
-- The package is designed for a source checkout / editable install because it loads the three component files by path. A wheel-only install does not include them.
+- Both wheels and source checkouts work: the three components are bundled under `gamai_trust/_components/`; a source checkout loads them from the top-level `proofgate/`, `agent-immunity/` and `crossnode-bench/` directories.
 - Antibody matching is lexical/near-miss; a semantic paraphrase can still pass unless the embedding guard (`gamai-guard`) is used in front.
 
 ## Related repos
