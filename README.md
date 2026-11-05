@@ -5,6 +5,8 @@
 
 # gamAI Trust Layer
 
+> **ProofGate Runtime v0.1:** the installable core (claims, receipts, lite guard, MCP) is now [`proofgate-runtime`](https://github.com/gamai-io/proofgate-runtime). This repo remains the broader trust layer.
+
 **Three checks that make an agent's "done" mean something:**
 
 1. **Verify the claim** — `proofgate` compares observed evidence with the expected value and returns `confirmed` / `refuted` / `unverified`, bound to a SHA-256 report hash.
