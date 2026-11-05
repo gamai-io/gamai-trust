@@ -44,6 +44,19 @@ class TrustTests(unittest.TestCase):
         self.assertEqual([r["status"] for r in report["claims"]],
                          ["confirmed", "refuted", "unverified", "unverified"])
 
+    def test_bhs_money_formats(self) -> None:
+        report = gamai_trust.verify_claims([
+            {"text": "bhs total", "observed": "2.400,00", "expected": "2400,00", "predicate": "eq_num"},
+            {"text": "bhs thousands", "observed": "2.400", "expected": "2400", "predicate": "eq_num"},
+            {"text": "us total", "observed": "2,400.00", "expected": "2400", "predicate": "eq_num"},
+            {"text": "large", "observed": "1.234.567,89", "expected": "1234567,89", "predicate": "eq_num"},
+        ])
+        self.assertEqual([r["status"] for r in report["claims"]], ["confirmed"] * 4, report)
+        bad = gamai_trust.verify_claims([
+            {"text": "malformed", "observed": "abc", "expected": "1", "predicate": "eq_num"},
+        ])
+        self.assertEqual(bad["claims"][0]["status"], "unverified")
+
     def test_report_hash_is_tamper_evident(self) -> None:
         report = gamai_trust.verify_claims([
             {"text": "ok", "observed": 1, "expected": 1, "predicate": "eq_num"},
