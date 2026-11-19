@@ -7,3 +7,13 @@ dist/
 runs/
 *.sqlite3
 demo.json
+
+# gama-secrets-guard
+.env
+*.token
+*.key
+*.pem
+tenants.json
+.git-credentials
+__pycache__/
+*.pyc
