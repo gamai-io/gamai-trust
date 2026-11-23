@@ -86,7 +86,7 @@ never `confirmed`. `refuted` wins over `unverified`, `unverified` wins over `con
 |---|---|
 | proofgate | 12 deterministic claims → 10 confirmed, 2 refuted, 0 unverified; report hash detects tamper |
 | agent-immunity | 18/18 self-tests: override, zero-width, homoglyph, base64, taint monotonicity, exact + near-miss antibodies |
-| crossnode-bench | 16 tasks × 3 demo nodes → 46/48 pass, **2 false successes detected** (large-N: LUMI-C 25,600 trials, 0 false-success on read/action/cross) |
+| crossnode-bench | 16 tasks × 3 demo nodes → 46/48 pass, **2 false successes detected** (large-N: shipped v1.4.0 — 25,600/25,600 honest fleet, 0 false successes; see the two-run note below) |
 
 ## Layout
 
