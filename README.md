@@ -118,7 +118,9 @@ repro.sh              one command: tests + demo
 Run on EuroHPC LUMI (project EHPC-AIF-2026PG01-1844):
 
 - **F1** — proofgate + agent-immunity + crossnode demo + guard reproduce on LUMI (CPU, ~0 GPU-h).
-- **crossnode large-N** (LUMI-C): **25,600 claim-vs-truth trials across 8 nodes** — pass rate 93.75%, false-success 6.25% (1,600 dishonest claims flagged), **0 false-success on read / action / cross**. Details: https://github.com/gamai-io/crossnode-bench
+- **crossnode large-N**: two separate runs, do not merge them.
+  *(a)* shipped in `crossnode-bench` v1.4.0 — honest fleet (8 Vultr nodes + Contabo, 16 tasks x 200 rounds): **25,600/25,600 pass, 0 false successes**; controlled liar variant: 28,800 records, 400 false successes, all 400 on the `MockLiar` node (detected, not passed), artifact sha256 in `RELEASE_v1.4.0.md`.
+  *(b)* a separate 25,600-trial Slurm run (8 nodes, 200 runs x 16 tasks) reported in `evidence-gate-runtime`: pass 93.75%, 1,600 planted dishonest claims (6.25%) all flagged. **Its dataset is not public yet**, so it is self-reported, not verifiable here.
 
 ## License
 
