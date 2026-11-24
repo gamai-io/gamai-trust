@@ -15,6 +15,9 @@
 
 No network. No API keys. No model required.
 
+> **Start here if you are new:** [`gama-mandate`](https://pypi.org/project/gama-mandate/) — sign a business commitment, execute it once, prove it offline.
+> This package is one piece of the same stack: `gama-mandate` (commitments) · `gamai-trust` (verify claims) · `gamai-guard` (injection) · `gamai-plugins` (policy, sandbox, team) · `gama-l` (provable computation).
+
 ## Install
 
 ```bash
