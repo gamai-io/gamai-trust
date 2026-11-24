@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gamai-trust"
-version = "0.3.3"
+version = "0.3.4"
 description = "Evidence-bound trust layer for agents: verify claims, remember refusals, score false success."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -19,9 +19,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/gamai-io/evidence-first-agent-runtime"
-Repository = "https://github.com/gamai-io/evidence-first-agent-runtime"
-Issues = "https://github.com/gamai-io/evidence-first-agent-runtime/issues"
+Homepage = "https://github.com/gamai-io/gamai-trust"
+Repository = "https://github.com/gamai-io/gamai-trust"
+Issues = "https://github.com/gamai-io/gamai-trust/issues"
 
 [project.scripts]
 gamai-trust = "gamai_trust.cli:main"
