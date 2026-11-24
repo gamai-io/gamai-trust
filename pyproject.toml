@@ -4,10 +4,24 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gamai-trust"
-version = "0.3.2"
+version = "0.3.3"
 description = "Evidence-bound trust layer for agents: verify claims, remember refusals, score false success."
+readme = "README.md"
 requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "Renato Šuster", email = "renato@gamatrade.ba"}]
 dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/gamai-io/evidence-first-agent-runtime"
+Repository = "https://github.com/gamai-io/evidence-first-agent-runtime"
+Issues = "https://github.com/gamai-io/evidence-first-agent-runtime/issues"
 
 [project.scripts]
 gamai-trust = "gamai_trust.cli:main"
